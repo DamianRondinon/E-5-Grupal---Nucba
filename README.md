@@ -1,6 +1,6 @@
 # E-5-Grupal---Nucba
 
 INTEGRANTES: 
->>Paleari, Carolina
->>Rondinon, Damián
->>Mansilla, Cristian
+_Paleari, Carolina
+_Rondinon, Damián
+_Mansilla, Cristian
