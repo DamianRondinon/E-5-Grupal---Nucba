@@ -121,6 +121,113 @@ header {
   gap: 20px;
 }
 
+/*! Estilos bóton para la ventana modal  */
+.btnComprar{
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 60px;
+  border: 1px solid;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 500;
+  transition: background-color .3s;
+}
+
+.btnComprar:hover{
+  background-color: #fff;
+  color: #1e3c72;
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 17, 17, 0.741);
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s .9s;
+  --transform: translateY(-100vh);
+  --transition: transform .8s;
+  z-index: 99;
+}
+
+.modal--show{
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .6s;
+  --transform: translateY(0);
+  --transition: transform .8s .8s;
+}
+
+.modal__container{
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90%;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+  gap: 0.75em;
+  place-items: center;
+  grid-auto-columns: 100%;
+  transform: var(--transform);
+  transition:var(--transition);
+}
+
+.modal__title{
+  font-size: 2.5rem;
+  color: #050d26;
+}
+
+.modal__paragraph{
+  margin-bottom: 10px;
+  color: #050d26;
+  text-align: center;
+}
+
+.modal__img{
+  width: 80%;
+  max-width: 200px;
+  /* border: 1px solid red; */
+}
+
+.modal__btn{
+  /* background-color: red; */
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.modal__confirm, .modal__cancel{
+  text-decoration: none;
+  color: #fff;
+  background-color: #F26250;
+  padding: 1em 3em;
+  border: 1px solid ;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 300;
+  transition: background-color .3s;
+}
+
+.modal__confirm{
+  background-color: #14ae5c;
+}
+
+.modal__confirm:hover{
+  color: #14ae5c;
+  background-color: #fff;
+}
+
+.modal__cancel:hover{
+  color: #F26250;
+  background-color: #fff;
+}
+/*! Fin estilos, ventana modal  */
 
 /*main*/
 main {

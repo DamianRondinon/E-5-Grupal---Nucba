@@ -38,8 +38,6 @@
   </head>
 
   <body>
-    <!-- Hola -->
-    <!-- aaaaaaaaaaa -->
     <header>
       <img
         src="./assets/img/nucbazappiicon 1.png"
@@ -73,7 +71,6 @@
           <h1>Si tenes Zappi,<span> tenes Nucba.</span></h1>
           <p>
             Buscá lo que quieras y nucba te quedes sin comida.
-            <br>Probando Git
           </p>
           <a href="#info">VER MÁS</a>
           <div class="img-pizzas">
@@ -84,6 +81,24 @@
       />
         </div>
       </section>
+
+      <!--? Ventana modal -->
+      <a href="#" class="btnComprar">Comprar</a>
+
+      <section class="modal ">
+        <div class="modal__container">
+            <img src="./assets/img/shoppingCartFlatline2.svg" class="modal__img">
+            <h2 class="modal__title">¡Finalizar pedido!</h2>
+            <p class="modal__paragraph">En unos minutos tendremos listo su pedido 😋, por favor confirme la compra.</p>
+            <!-- <p class="modal__paragraph">(Si desea añadir más productos cancele y siga añadiendo en el carrito para que todos sus pedidos esten listos al mismo tiempo)</p> -->
+            <div class="modal__btn">
+              <a href="#" class="modal__confirm"><i class="fa-regular fa-circle-check"></i></a>
+              <a href="#" class="modal__cancel"><i class="fa-solid fa-ban"></i></a>
+            </div>
+            
+        </div>
+      </section>
+
       <!-- info -->
       <section id="info">
         <p class="promotion">Hoy te recomendamos</p>
@@ -291,5 +306,6 @@
     </footer>
     <script src="./assets/data.js"></script>
     <script src="./assets/index.js"></script>
+    <script src="./assets/main.js"></script>
   </body>
 </html>
