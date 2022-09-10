@@ -97,6 +97,15 @@
     .category {
       width: 120px;
     }
+
+    /* Ventana modal */
+    .modal__container{
+      padding: 2em 1.5em;
+    }
+
+    .modal__title{
+        font-size: 2rem;
+    }
   }
   
   /* Celu */
@@ -162,6 +171,11 @@
     .footer-links {
       flex-direction: column;
       text-align: center;
+    }
+
+    /* Ventana modal */
+    .modal__img{
+      display: none;
     }
   }
   
