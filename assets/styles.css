@@ -229,6 +229,65 @@ header {
 }
 /*! Fin estilos, ventana modal  */
 
+/*! Estilos para seleccionar las categorías */
+.hide {
+  display: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+button:active{
+  background-color: rgba(242, 98, 80, 0.7);
+}
+
+.card {
+  width: 282px;
+  height: 213px;
+  background: var(--cards);
+  max-width: 18em;
+  margin-top: 1em;
+  padding: 10px 10px;
+  border-radius: 15px;
+  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-container{ 
+  width: 250px; 
+  height: 100px; 
+  display: block; 
+  position: relative; 
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.image-container img{
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%;
+}
+
+.name-container h2{
+  font-size: 1em;
+}
+
+
+/* .active {
+  background-color: #6759ff;
+  color: #ffffff;
+}  */
+
+  .products-cards{
+    padding: 20px;
+    margin-top: 20px;
+  }
+/*! Fin de estilos para seleccionar las categorías */
+
 /*main*/
 main {
   background: var(--background);
@@ -422,6 +481,7 @@ text-align: center;
 background: var(--cards);
 border-radius: 10px;
 gap: 20px;
+color: #f0fbff;
 }
 
 .category-card img {
@@ -455,7 +515,7 @@ margin-top: -0.5rem;
     margin-left: 10rem;
 }
 
-.products-cards {
+.products-cards, .products-popular {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -603,3 +663,17 @@ footer li {
     opacity: 1;
   }
 }
+
+
+/*! Probando cosas  */
+.active {
+  background-color: #6759ff;
+  color: #ffffff;
+} 
+
+.name-container{
+  /* background-color: red; */
+  width: 1000px;
+  /* text-align: center; */
+}
+/*! Probando cosas */
