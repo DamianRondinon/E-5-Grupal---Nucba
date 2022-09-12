@@ -549,7 +549,7 @@ margin-top: -0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 5.5rem;
+    /* margin-right: 5.5rem; */
   }
   
   .product-top h1 {
