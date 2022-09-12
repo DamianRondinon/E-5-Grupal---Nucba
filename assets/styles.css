@@ -277,10 +277,11 @@ button:active{
 }
 
 
-/* .active {
-  background-color: #6759ff;
+.active {
+  background-color: rgba(242, 98, 80, 0.75);
+  width: 150px;
   color: #ffffff;
-}  */
+} 
 
   .products-cards{
     padding: 20px;
@@ -663,11 +664,3 @@ footer li {
     opacity: 1;
   }
 }
-
-
-/*! Probando cosas  */
-.active {
-  background-color: #6759ff;
-  color: #ffffff;
-} 
-/*! Probando cosas */

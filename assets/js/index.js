@@ -63,98 +63,98 @@ let products = {
   data:[
     {
       nombre: "La MR. Pit",
-      category: "Pizza",
+      category: "Pizzas",
       descripcion: "Sólo para expertos",
       precio: "$350",
       imagen: "./assets/img/Photo Menu.png",
     },
     {
       nombre: "¡Q'Jamone!",
-      category: "Pizza",
+      category: "Pizzas",
       descripcion: "c/jamón crudo",
       precio: "$350",
       imagen: "./assets/img/Photo Menu-1.png",
     },
     {
       nombre: "La Charly García",
-      category: "Pizza",
+      category: "Pizzas",
       descripcion: "¡BASTA!",
       precio: "$380",
       imagen: "./assets/img/Photo Menu-2.png",
     },
     {
       nombre: "La Maradona",
-      category: "Pizza",
+      category: "Pizzas",
       descripcion: "¡Eterna!",
       precio: "$10",
       imagen: "./assets/img/Photo Menu-3.png",
     },
     {
       nombre: "Picantovich",
-      category: "Pizza",
+      category: "Pizzas",
       descripcion: "Pica 2 veces",
       precio: "$750",
       imagen: "./assets/img/Photo Menu-4.png",
     },
     {
       nombre: "La Hasbulla",
-      category: "Pizza",
+      category: "Pizzas",
       descripcion: "En honor al 1",
       precio: "$990",
       imagen: "./assets/img/Photo Menu-5.png",
     },
     {
       nombre: "Leo Messi",
-      category: "Pizza",
+      category: "Pizzas",
       descripcion: "¡De pie señores!",
       precio: "$350",
       imagen: "./assets/img/Photo Menu-6.png",
     },
     {
       nombre: "Nick Gi",
-      category: "Pizza",
+      category: "Pizzas",
       descripcion: "La que desaparece",
       precio: "$Gratis",
       imagen: "./assets/img/Photo Menu-7.png",
     },
     {
       nombre: "Bennazianna",
-      category: "Pizza",
+      category: "Pizzas",
       descripcion: "La más completa",
       precio: "$3650",
       imagen: "./assets/img/pizza_bennaziana.jpg",
     },
     {
       nombre: "Tronco-Pizza",
-      category: "Pizza",
+      category: "Pizzas",
       descripcion: "Para todo el día",
       precio: "$870",
       imagen: "./assets/img/pizza_tronco.jpg",
     },
     {
       nombre: "Clásica",
-      category: "Hamburguesa",
+      category: "Hamburguesas",
       descripcion: "La que nunca defrauda",
       precio: "$450",
       imagen: "./assets/img/hambur_clasica.jpg",
     },
     {
       nombre: "Shack burger de queso",
-      category: "Hamburguesa",
+      category: "Hamburguesas",
       descripcion: "Puro queso",
       precio: "$550",
       imagen: "./assets/img/hambur_queso.jpg",
     },
     {
       nombre: "Ranchera",
-      category: "Hamburguesa",
+      category: "Hamburguesas",
       descripcion: "Tapa arterias",
       precio: "$600",
       imagen: "./assets/img/hambur_ranchera.jpg",
     },
     {
       nombre: "Vegetariana",
-      category: "Hamburguesa",
+      category: "Hamburguesas",
       descripcion: "La vaca te agradece",
       precio: "$400",
       imagen: "./assets/img/hambur_vegetariana.jpg",
@@ -196,91 +196,91 @@ let products = {
     },
     {
       nombre: "La MR. Pit (Individual)",
-      category: "Individual",
+      category: "Individuales",
       descripcion: "Sólo para expertos",
       precio: "$44",
       imagen: "./assets/img/Photo Menu.png",
     },
     {
       nombre: "¡Q'Jamone! (Individual)",
-      category: "Individual",
+      category: "Individuales",
       descripcion: "c/jamón crudo",
       precio: "$44",
       imagen: "./assets/img/Photo Menu-1.png",
     },
     {
       nombre: "La Charly García (Individual)",
-      category: "Individual",
+      category: "Individuales",
       descripcion: "¡BASTA!",
       precio: "$48",
       imagen: "./assets/img/Photo Menu-2.png",
     },
     {
       nombre: "La Maradona (Individual)",
-      category: "Individual",
+      category: "Individuales",
       descripcion: "¡Eterna!",
       precio: "$57",
       imagen: "./assets/img/Photo Menu-3.png",
     },
     {
       nombre: "Picantovich (Individual)",
-      category: "Individual",
+      category: "Individuales",
       descripcion: "Pica 2 veces",
       precio: "$94",
       imagen: "./assets/img/Photo Menu-4.png",
     },
     {
       nombre: "La Hasbulla (Individual)",
-      category: "Individual",
+      category: "Individuales",
       descripcion: "En honor al 1",
       precio: "$124",
       imagen: "./assets/img/Photo Menu-5.png",
     },
     {
       nombre: "Leo Messi (Individual)",
-      category: "Individual",
+      category: "Individuales",
       descripcion: "¡De pie señores!",
       precio: "$2",
       imagen: "./assets/img/Photo Menu-6.png",
     },
     {
       nombre: "Nick Gi (Individual)",
-      category: "Individual",
+      category: "Individuales",
       descripcion: "La que desaparece",
       precio: "$Gratis",
       imagen: "./assets/img/Photo Menu-7.png",
     },
     {
       nombre: "Bennazianna (Individual)",
-      category: "Individual",
+      category: "Individuales",
       descripcion: "La más completa",
       precio: "$457",
       imagen: "./assets/img/pizza_bennaziana.jpg",
     },
     {
       nombre: "Tronco-Pizza (Individual)",
-      category: "Individual",
+      category: "Individuales",
       descripcion: "Para todo el día",
       precio: "$109",
       imagen: "./assets/img/pizza_tronco.jpg",
     },
     {
       nombre: "Wrap Jamón y Queso",
-      category: "Wrap",
+      category: "Wraps",
       descripcion: "Soy el wrap 1",
       precio: "$200",
       imagen: "./assets/img/wrap_jamon.jpg",
     },
     {
       nombre: "Wrap Pollo",
-      category: "Wrap",
+      category: "Wraps",
       descripcion: "Soy el wrap 2",
       precio: "$250",
       imagen: "./assets/img/wrap_pollo.jpg",
     },
     {
       nombre: "Wrap Pulled Pork",
-      category: "Wrap",
+      category: "Wraps",
       descripcion: "Soy el wrap 3",
       precio: "$350",
       imagen: "./assets/img/wrap_pork.jpg",
@@ -322,21 +322,21 @@ let products = {
     },
     {
       nombre: "Increible Hulk",
-      category: "Batiduki",
+      category: "Batidukis",
       descripcion: "Puras cosas verdes",
       precio: "$300",
       imagen: "./assets/img/batido_hulk.jpg",
     },
     {
       nombre: "Airon Man",
-      category: "Batiduki",
+      category: "Batidukis",
       descripcion: "Todo el power",
       precio: "$320",
       imagen: "./assets/img/batido_iron.jpg",
     },
     {
       nombre: "Homero",
-      category: "Batiduki",
+      category: "Batidukis",
       descripcion: "Babosos!",
       precio: "$310",
       imagen: "./assets/img/batido_homero.jpg",
@@ -443,6 +443,15 @@ $buttons.addEventListener("click", () =>{
 
 //Parametro pasado del boton (categoria)
 function filterProduct(value) {
+  let $texto = document.querySelectorAll(".category-tittle");
+  $texto.forEach((button) =>{
+    if (value.toUpperCase() == button.innerText.toUpperCase()) {
+      button.classList.add("active");
+    } else {
+      button.classList.remove("active");
+    }
+    console.log(button.innerHTML);
+  })
   $buttons.forEach((button) => {
     //Comprobamos si el valor del parametro es igual a lo que tiene el boton en su innerText.
     if (value.toUpperCase() == button.innerText.toUpperCase()) {
@@ -450,6 +459,7 @@ function filterProduct(value) {
     } else {
       button.classList.remove("active");
     }
+    // console.log(button.innerHTML);
   });
 
   //Seleccionamos todas las cards
