@@ -175,11 +175,11 @@
   }
   
   /*Microinteracción para las imagenes de las cards de productos*/
-  #products img {
+  #products img, .products-cards img{
     transition: all 0.3s linear;
   }
   
-  #products img:hover {
+  #products img:hover, .products-cards img:hover {
     transform: scale(1.02);
     transition: all 0.3s linear;
   }

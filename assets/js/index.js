@@ -422,7 +422,7 @@ function createCards(){
     after.classList.add("product-after")
     container.appendChild(after);
     //Precio
-    let precio = document.createElement("h3");
+    let precio = document.createElement("h2");
     precio.innerText = i.precio;
     after.appendChild(precio);
     //Boton agregar
