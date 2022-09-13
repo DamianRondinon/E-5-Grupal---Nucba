@@ -302,14 +302,14 @@ let products = {
     {
       nombre: "Pozole",
       category: "Mexican",
-      descripcion: "Especial para los días fríos de invierno",
+      descripcion: "Especial para los días de invierno",
       precio: "$350",
       imagen: "./assets/img/mexican_pozole.jpg",
     },
     {
       nombre: "Quesadilla",
       category: "Mexican",
-      descripcion: "Uno de los mejores manjares que existen",
+      descripcion: "Un manjar que debes probar",
       precio: "$250",
       imagen: "./assets/img/mexican_quesadilla.jpg",
     },

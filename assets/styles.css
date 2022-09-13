@@ -509,7 +509,7 @@ main {
 #products .title {
     font-size: 22px;
     font-weight: 500;
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
     margin-bottom: 4rem;
     display: flex;
     justify-content: space-between;
@@ -550,6 +550,8 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* background-color: red; */
+    width: 240px;
     /* margin-right: 5.5rem; */
   }
   
