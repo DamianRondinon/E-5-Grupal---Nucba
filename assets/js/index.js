@@ -192,7 +192,7 @@ let products = {
       category: "Napapuki",
       descripcion: "Picoso",
       precio: "$410",
-      imagen: "./assets/img/papas_picante.jpg",
+      imagen: "https://th.bing.com/th/id/R.e8eb0a12ca91c54db4b99c05fd9d557c?rik=08yTqlSicQLSPQ&pid=ImgRaw&r=0",
     },
     {
       nombre: "La MR. Pit (Individual)",
@@ -302,14 +302,14 @@ let products = {
     {
       nombre: "Pozole",
       category: "Mexican",
-      descripcion: "Especial para los días fríos de invierno",
+      descripcion: "Especial para los días de invierno",
       precio: "$350",
       imagen: "./assets/img/mexican_pozole.jpg",
     },
     {
       nombre: "Quesadilla",
       category: "Mexican",
-      descripcion: "Uno de los mejores manjares que existen",
+      descripcion: "Un manjar que debes probar",
       precio: "$250",
       imagen: "./assets/img/mexican_quesadilla.jpg",
     },
@@ -375,6 +375,7 @@ function pintarHTML() {
     .join("");
 }
 
+
 /* Filtrado de productos */
 createCards();
 
@@ -429,6 +430,7 @@ function createCards(){
     let agregar = document.createElement("a");
     agregar.innerText = "Agregar";
     agregar.setAttribute("href", "#agregar");
+    agregar.addEventListener('click', agregarProductoAlCarrito);
     after.appendChild(agregar);
   
     card.appendChild(container);
@@ -436,10 +438,11 @@ function createCards(){
   }
 }
 
-$buttons.addEventListener("click", () =>{
-  alert("hola");
-})
-
+function agregarProductoAlCarrito(e) {
+  // Anyadimos el Nodo a nuestro carrito
+  e.preventDefault();
+  alert("Hola");  
+}
 
 //Parametro pasado del boton (categoria)
 function filterProduct(value) {
