@@ -12,10 +12,3 @@ $closeModal.addEventListener('click', (e)=>{
     e.preventDefault();
     $modal.classList.remove('modal--show');
 });
-
-document.write('<script src="./assets/js/index.js"></script>');
-function agregarProductoAlCarrito(e) {
-    // Anyadimos el Nodo a nuestro carrito
-    e.preventDefault();
-    alert("Hola");  
-}
