@@ -34,7 +34,6 @@ const renderCartProduct = (cartProduct) => {
     </div>
     <div class="item-handler">
     <span class="quantity-handler down" data-id=${id}>-</span>
-    <span class="item-quantity">${quantity}</span>
     <span class="quantity-handler up" data-id=${id}>+</span>
     </div>
     </div>
