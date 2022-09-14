@@ -192,7 +192,7 @@ let products = {
       category: "Napapuki",
       descripcion: "Picoso",
       precio: "$410",
-      imagen: "./assets/img/papas_picante.jpg",
+      imagen: "https://th.bing.com/th/id/R.e8eb0a12ca91c54db4b99c05fd9d557c?rik=08yTqlSicQLSPQ&pid=ImgRaw&r=0",
     },
     {
       nombre: "La MR. Pit (Individual)",
@@ -349,6 +349,7 @@ localStorage.setItem("products", JSON.stringify(products.data)); // lo envío al
 const $productCard = document.querySelector(".products-cards");
 const $productPopular = document.querySelector(".products-popular");
 const $buttons = document.querySelectorAll(".button-value");
+const $agregar = document.getElementsByClassName(".agregar")
 // al cargar la página, quiero que se renderice el HTML de todas las pizzas
 window.addEventListener("load", () => pintarHTML());
 
@@ -374,6 +375,7 @@ function pintarHTML() {
     })
     .join("");
 }
+
 
 /* Filtrado de productos */
 createCards();
@@ -429,6 +431,7 @@ function createCards(){
     let agregar = document.createElement("a");
     agregar.innerText = "Agregar";
     agregar.setAttribute("href", "#agregar");
+    agregar.addEventListener('click', agregarProductoAlCarrito);
     after.appendChild(agregar);
   
     card.appendChild(container);
@@ -436,9 +439,6 @@ function createCards(){
   }
 }
 
-$buttons.addEventListener("click", () =>{
-  alert("hola");
-})
 
 
 //Parametro pasado del boton (categoria)
@@ -485,4 +485,5 @@ function filterProduct(value) {
 //Mostrar los productos inicialmente
 window.onload = () => {
   filterProduct("");
+  $agregar.addEventListener("click", (e)=>{carro.agregar(e)});
 };
