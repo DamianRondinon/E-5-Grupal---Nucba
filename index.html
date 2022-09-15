@@ -62,19 +62,16 @@
           <i class="fa-solid fa-user"></i>
         </ul>
 
-        <div id="carrito" class="cart">
+        <aside class="cart">
           <h2>Tus productos</h2>
-          <div class="cart-container">
-          </div>
-          <span class="divider"></span>
-            <div class="cart-total">
-              <p>Total:</p>
-              <span class="total">$1000</span>
-              <button class="btn-buy">Comprar</button>
-            </div>
-            <div class="overlay"></div>
-        </div>
-
+          <!-- Elementos del carrito -->
+          <ul id="carrito" class="list-group"></ul>
+          <!-- <div id="carrito" class="cart"></div> -->
+          <hr>
+          <!-- Precio total -->
+          <p class="text-right">Total: <span id="total"></span></p>
+          <a href="#" class="btnComprar">Comprar</a>
+        </aside>
 
         <!-- AGREGAMOS UN DIV VACIO DE CLASE OVERLAY PARA EFECTO GLASS AL ABRIR MENU HAMBURGUESA Y CARRITO -->
         <div class="overlay"></div>
@@ -100,10 +97,7 @@
       </section>
 
       <!--? Ventana modal -->
-      <!-- <ul id="carrito" class="list-group"></ul> -->
-      <p class="text-right">Total: <span id="total"></span>&euro;</p>
-
-      <a href="#" class="btnComprar">Comprar</a>
+      <!-- <a href="#" class="btnComprar">Comprar</a> -->
 
       <section class="modal ">
         <div class="modal__container">
