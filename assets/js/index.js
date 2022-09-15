@@ -559,7 +559,24 @@ function renderizarCarrito() {
       // Creamos el nodo del item del carrito
       const miNodo = document.createElement('li');
       miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
-      miNodo.textContent = `<img src="${miItem[0].imagen}" alt=""> ${miItem[0].nombre} ${miItem[0].descripcion} Cantidad:${numeroUnidadesItem} - ${miItem[0].precio}`;
+      miNodo.innerHTML = `
+      <h2>Tus productos</h2>
+      <div class="product-cart">
+        <div class="product-cart_imagen">
+          <img src="${miItem[0].imagen}" alt="">
+        </div>
+        <div class="product-cart_info">
+          ${miItem[0].nombre} 
+          ${miItem[0].descripcion}
+          ${miItem[0].precio}
+        </div>
+        <div class="product-cart_unidad">
+          <button>-</button>
+          ${numeroUnidadesItem}
+          <button>+</button>
+        </div>
+      </div>
+      <a href="#" class="btnComprar">Comprar</a>`;
       // Boton de borrar
       const miBoton = document.createElement('button');
       miBoton.classList.add('btn', 'btn-danger', 'mx-5');
