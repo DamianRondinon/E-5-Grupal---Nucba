@@ -5,6 +5,7 @@ const $closeModal = document.querySelector('.modal__cancel');
 
 $openModal.addEventListener('click', (e)=>{
     e.preventDefault();
+    alert("Hola");
     $modal.classList.add('modal--show');
 });
 
