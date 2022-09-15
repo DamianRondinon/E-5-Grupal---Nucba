@@ -527,7 +527,7 @@ window.onload = () => {
 //Carrito
 let carrito = [];
 const DOMitems = document.querySelector('#items');
-const DOMcarrito = document.querySelector('#carrito');
+const $carrito = document.querySelector('#carrito');
 const DOMtotal = document.querySelector('#total');
 const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 const miLocalStorage = window.localStorage;
@@ -540,9 +540,8 @@ function agregarProductoAlCarrito(e) {
 }
 
 function renderizarCarrito() {
-  alert("Mirar donde está la ventana modal")
   // Vaciamos todo el html
-  DOMcarrito.textContent = '';
+  $carrito.textContent = '';
   // Quitamos los duplicados
   const carritoSinDuplicados = [...new Set(carrito)];
   // Generamos los Nodos a partir de carrito
@@ -559,10 +558,8 @@ function renderizarCarrito() {
       }, 0);
       // Creamos el nodo del item del carrito
       const miNodo = document.createElement('li');
-      const miImage = document.createElement('img');
-      miImage.setAttribute("src", "${miItem[0].imagen}");
       miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
-      miNodo.textContent = `${miImage} ${miItem[0].nombre} ${miItem[0].descripcion} Cantidad:${numeroUnidadesItem} - ${miItem[0].precio}`;
+      miNodo.textContent = `<img src="${miItem[0].imagen}" alt=""> ${miItem[0].nombre} ${miItem[0].descripcion} Cantidad:${numeroUnidadesItem} - ${miItem[0].precio}`;
       // Boton de borrar
       const miBoton = document.createElement('button');
       miBoton.classList.add('btn', 'btn-danger', 'mx-5');
@@ -572,7 +569,7 @@ function renderizarCarrito() {
       // miBoton.addEventListener('click', borrarItemCarrito);
       // Mezclamos nodos
       miNodo.appendChild(miBoton);
-      DOMcarrito.appendChild(miNodo);
+      $carrito.appendChild(miNodo);
   });
   // Renderizamos el precio total en el HTML
   DOMtotal.textContent = "CalcularTotal";
