@@ -570,9 +570,9 @@ function renderizarCarrito() {
           ${miItem[0].precio}
         </div>
         <div class="product-cart_unidad">
-          <button>-</button>
+          <button class="btnunity">-</button>
           ${numeroUnidadesItem}
-          <button>+</button>
+          <button class="btnunity">+</button>
         </div>
       </div>`;
       // Boton de borrar

@@ -100,11 +100,12 @@ header {
 /*carrito*/
 .cart {
   position: absolute;
-  top: 65px;
+  top: 85px;
   right: 0;
   padding: 50px 30px;
-  background: linear-gradient(98.81deg, #ffa100 -0.82%, #fb103d 101.53%);
+  background-image: radial-gradient(circle at 50% -20.71%, #dfb852 0, #e5ae4b 10%, #eaa345 20%, #ee9641 30%, #f0893d 40%, #f2793c 50%, #f3683d 60%, #f35741 70%, #f34448 80%, #f32f50 90%, #f1125a 100%);
   border-left: 1px solid var(--nav-bg);
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -168,7 +169,6 @@ header {
 }
 
 .item-price {
-  background: linear-gradient(to right, #30cfd0, #c43ad6);
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
@@ -241,10 +241,13 @@ header {
   font-size: 14px;
 }
 
+
 /*! Estilos bóton para la ventana modal  */
 .btnComprar{
+  display: flex;
+  text-align: center;
   text-decoration: none;
-  color: #fff;
+  color: rgb(255, 255, 255);
   padding: 15px 60px;
   border: 1px solid;
   border-radius: 6px;
@@ -255,7 +258,7 @@ header {
 
 .btnComprar:hover{
   background-color: #fff;
-  color: #1e3c72;
+  color: var(--secondary);
 }
 
 .modal{
@@ -398,8 +401,9 @@ button:active{
 
 
 .active {
-  background-color: rgba(242, 98, 80, 0.75);
-  width: 150px;
+  background: linear-gradient(98.81deg, #ffa100 -0.82%, #fb103d 101.53%);
+  width: 8rem;
+  border-radius: 1rem;
   color: #ffffff;
 } 
 
@@ -415,36 +419,45 @@ button:active{
   width: 282px;
   /* height: 213px; */
   font-size: 10px;
-  padding: 10px 10px;
+  padding: 15px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   background: var(--cards);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  box-shadow: 10px 10px 122px 41px rgba(0,0,0,0.27);
-  background-color: #64d3ff;
+  transition: all 400ms ease;
+}
+
+.product-cart:hover {
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+transform: translateY(-3%);
 }
 
 .product-cart_imagen{
-  width: 40px;
-  height: 60px;
-  background-color: red;
+  width: 40%;
+  display: flex;
+  text-align: center;
 }
 
 .product-cart_imagen img{
   width: 100%;
+  border-radius: 1rem;
 }
 
 .product-cart_info{
   display: flex;
   flex-direction: row;
-  background-color: blueviolet;
-  height: 30px;
+  height: 20px;
 }
 
 .product-cart_unidad{
-  background-color: #14ae5c;
+  display: flex;
+}
+
+.btnunity{
+padding: 5px 5px;
 }
 /*! Fin de estilos para productos del carrito */
 /*main*/
@@ -786,6 +799,7 @@ footer span {
   display: flex;
   justify-content: center;
   gap: 20px;
+  cursor: pointer;
 }
 
 footer li {
